@@ -13,7 +13,6 @@ Este proyecto tiene como objetivo evaluar diferentes modelos predictivos para es
 - [Conclusión](#conclusión)
 - [Cómo Ejecutar el Proyecto](#cómo-ejecutar-el-proyecto)
 - [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
 
 ## Descripción del Proyecto
 
