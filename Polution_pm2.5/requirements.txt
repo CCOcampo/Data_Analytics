@@ -1,0 +1,13 @@
+pandas
+numpy
+seaborn
+matplotlib
+tensorflow
+scikit-learn
+statsmodels
+joblib
+torch
+streamlit
+openpyxl
+keras
+plotly
