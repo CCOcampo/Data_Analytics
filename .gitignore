@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # Ignorar archivos específicos
 random_forest_model.pkl
 
 # Ignorar carpeta de entorno virtual
 .env/
+catboost_info/
+
