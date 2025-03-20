@@ -2,7 +2,9 @@
 
 A web application that analyzes the sentiment of Amazon product reviews using deep learning. The application can determine whether a review expresses positive or negative sentiment and provides a confidence score for its prediction.
 
-![app_sentimental.png](https://data-projects-cco.s3.us-east-1.amazonaws.com/Images_Project/app_sentiment.png)
+<center>
+  <img src="https://data-projects-cco.s3.us-east-1.amazonaws.com/Images_Project/app_sentiment.png" alt="app_sentimental.png" width="500">
+</center>
 
 ## Features
 
@@ -67,7 +69,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-4. Run the notebook **sentiment_analysis.ipynb** to generate and download the files **lstm_model.h5** and **tokenizer.pkl** needed for sentiment analysis.
+4. Run the notebook **sentiment_analysis.ipynb** to generate and download the updated **lstm_model.h5** and **tokenizer.pkl** files needed for sentiment analysis. You can also modify **sentiment_analysis.ipynb** to train the model with more data.
 
 5. Run the application:
 
