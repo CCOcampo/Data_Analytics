@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Review Sentiment Analyzer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <!-- Floating particles -->
+    <div class="particles" id="particles-js"></div>
+
+    <div class="container">
+      <!-- Cabecera -->
+      <header class="text-center">
+        <div class="d-flex align-items-center justify-content-center mb-3">
+          <i class="fab fa-amazon amazon-logo"></i>
+          <h2 class="app-title mb-0">Review Sentiment Analyzer</h2>
+        </div>
+        <p class="text-muted mb-4">
+          Analyze the sentiment of Amazon product reviews with machine learning
+        </p>
+      </header>
+
+      <!-- Banner de introducción -->
+      <div class="intro-banner mb-4">
+        <div class="star-rating text-center mb-2">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h4 class="text-center accent-text">
+          Discover what customers really think
+        </h4>
+      </div>
+
+      <!-- Formulario -->
+      <div class="form-container">
+        <form id="reviewForm" class="mb-4 text-center">
+          <textarea
+            class="form-control mb-4"
+            name="text"
+            id="reviewText"
+            rows="4"
+            placeholder="Paste or type an Amazon product review here to analyze its sentiment..."
+          ></textarea>
+          <button type="submit" class="btn btn-amazon">
+            <i class="fas fa-search me-2"></i>Analyze Review
+          </button>
+        </form>
+        <!-- Loading spinner -->
+        <div class="spinner-container" id="loadingSpinner">
+          <div class="spinner"></div>
+          <p class="mt-2">Analyzing your review...</p>
+        </div>
+      </div>
+
+      <!-- Resultado del análisis -->
+      <div id="resultContainer">
+        <!-- El contenido se llenará dinámicamente con JavaScript -->
+      </div>
+
+      <!-- Placeholder cuando no hay resultado -->
+      <div class="placeholder-review" id="placeholderReview">
+        <i class="fas fa-comment-dots"></i>
+        <p class="mb-0">
+          Enter an Amazon product review above and click "Analyze Review" to
+          determine if it expresses a positive or negative sentiment.
+        </p>
+      </div>
+
+      <!-- Consejos para reseñas -->
+      <div class="review-tips mt-4">
+        <h5>
+          <i
+            class="fas fa-lightbulb me-2"
+            style="color: var(--amazon-orange)"
+          ></i
+          >Review Writing Tips
+        </h5>
+        <ul>
+          <li>Be specific about what you liked or disliked</li>
+          <li>
+            Include details about product quality, features, and usefulness
+          </li>
+          <li>Mention if the product met your expectations</li>
+          <li>Share your experience with shipping and customer service</li>
+        </ul>
+      </div>
+
+      <!-- Pie de página -->
+      <footer class="mt-4">
+        <p>
+          This tool uses machine learning to analyze Amazon reviews. Results are
+          for informational purposes only.
+        </p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
